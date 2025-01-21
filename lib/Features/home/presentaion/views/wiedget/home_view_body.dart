@@ -1,3 +1,4 @@
+import 'package:bookly_app/Features/home/presentaion/views/wiedget/best_seller_list_view_item.dart';
 import 'package:bookly_app/Features/home/presentaion/views/wiedget/custom_app_bar.dart';
 import 'package:bookly_app/Features/home/presentaion/views/wiedget/feature_boobs_list_view.dart';
 import 'package:bookly_app/core/utils/assets.dart';
@@ -12,7 +13,7 @@ class HomeViewBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 24),
+      padding: const EdgeInsets.symmetric(horizontal: 30),
       child: const Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -21,7 +22,9 @@ class HomeViewBody extends StatelessWidget {
           SizedBox(
             height: 35,
           ),
-          Text('Best Seller',style: Styles.titleMediem),
+          Text('Best Seller',style: Styles.textStyle20),
+          SizedBox(height: 20,),
+          BestSellerListViewItem(),
         ],
       ),
     );
